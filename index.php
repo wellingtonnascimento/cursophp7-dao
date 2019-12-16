@@ -29,13 +29,17 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*Alterar um usuario
 $usuario = new Usuario();
-
 $usuario->loadByid(6);
-
 $usuario->update("agenor", "76679$#");
+echo $usuario;*/
 
 
+//Deletar Um Usuario
+$usuario = new Usuario();
+$usuario->loadByid(5);
+$usuario->delete();
 echo $usuario;
 
 ?>
